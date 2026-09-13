@@ -1,21 +1,106 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>이다산 | 백엔드 개발자</title>
-</head>
-<body>
-  <h1>이다산</h1>
-  <p>사용자에게 필요한 서비스를 끝까지 구현하는 백엔드 개발자입니다.</p>
+            <li>저장 트랜잭션보다 비동기 조회가 먼저 실행되던 문제를 추적해, 커밋 이후 작업이 시작되도록 처리 순서를 변경했습니다.</li>
+            <li>지연 로딩 오류를 해결하기 위해 필요한 값을 짧은 트랜잭션에서 DTO로 추출하고 외부 API 호출과 결과 저장을 분리했습니다.</li>
+            <li>Gimpo-Wellness의 15개 PR에 적용해 31회 자동 리뷰와 40개 인라인 의견의 실제 사용 흐름을 확인했습니다.</li>
+          </ul>
+          <p class="stack">Java 21 · Spring Boot · JPA · PostgreSQL · React · GitHub API · OpenAI API</p>
+          <p class="links"><a href="https://github.com/ham-zi/-Backend-CodeReviewer" target="_blank" rel="noreferrer">Backend</a><a href="https://github.com/ham-zi/-Frontend-CodeReviewer" target="_blank" rel="noreferrer">Frontend</a></p>
+        </article>
 
-  <h2>Projects</h2>
-  <h3>프로젝트 이름</h3>
-  <p>프로젝트에서 해결한 문제와 담당한 기능을 적습니다.</p>
+        <article class="entry">
+          <div class="entry-head">
+            <div>
+              <p class="entry-kicker">4인 팀 프로젝트 · 코스 영역 백엔드 및 프론트엔드</p>
+              <h3>Gimpo-Wellness</h3>
+            </div>
+            <time>2026.08 — 진행 중</time>
+          </div>
+          <p class="summary">김포의 관광·웰니스 정보를 지도에서 탐색하고 관심 장소를 연결해 여행 코스를 구성하는 서비스</p>
+          <ul>
+            <li>관리자 고정 코스 CRUD와 사용자 코스 조회·제작 API, 순례길 목록·상세·관리 화면을 구현했습니다.</li>
+            <li>카카오 지도·경로 API를 연동해 출발지, 경유지, 도착지를 실제 도보 경로로 표시했습니다.</li>
+            <li>경유 순서 후보의 총이동거리를 비교해 가장 짧은 방문 순서를 선택하고, 각 구간 1km 이내 음식점을 조회했습니다.</li>
+            <li>일부 산악 좌표에서만 경로 조회가 실패하는 조건을 요청 데이터까지 추적해 원인을 확인했습니다.</li>
+          </ul>
+          <p class="stack">Java · Spring Boot · MyBatis · Oracle · React · Kakao API</p>
+          <p class="links"><a href="https://github.com/kkimmun/wellness-backend" target="_blank" rel="noreferrer">Backend</a><a href="https://github.com/kkimmun/wellness-frontend" target="_blank" rel="noreferrer">Frontend</a></p>
+        </article>
 
-  <h2>Contact</h2>
-  <p>
-    <a href="https://github.com/ham-zi">GitHub</a>
-  </p>
+        <article class="entry">
+          <div class="entry-head">
+            <div>
+              <p class="entry-kicker">5인 팀 프로젝트 · 팀장, 백엔드 및 일부 화면 개발</p>
+              <h3>Plogues</h3>
+            </div>
+            <time>2026.06 — 2026.07</time>
+          </div>
+          <p class="summary">플로깅·식목 활동의 모집, 참여 신청, 활동 인증과 후기를 연결하는 환경 활동 커뮤니티</p>
+          <ul>
+            <li>참여 신청·승인·거절과 마이페이지 API, 문의·신고 및 관리자 처리 화면을 담당했습니다.</li>
+            <li>동시 승인 시 정원을 초과하는 Race Condition을 멀티스레드 테스트로 재현하고 SELECT FOR UPDATE와 트랜잭션으로 제어했습니다.</li>
+            <li>라즈베리파이의 온도·습도·토양 수분 데이터를 저장하고 AVG와 GROUP BY로 시간별 평균을 조회했습니다.</li>
+            <li>팀원 승인 병합 PR 87건 중 82건의 리뷰에 참여하고 기술 질문과 수정 의견 42건을 남겼습니다.</li>
+          </ul>
+          <p class="stack">Java 21 · Spring Boot · MyBatis · Oracle · React · AWS · Docker</p>
+          <p class="links"><a href="https://github.com/ham-zi/-BE-plogues" target="_blank" rel="noreferrer">Backend</a><a href="https://github.com/ham-zi/-FE-plogues" target="_blank" rel="noreferrer">Frontend</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="strength-title">
+      <h2 id="strength-title">Strengths</h2>
+      <div class="strength-grid">
+        <article>
+          <h3>불편을 기능으로 바꿉니다</h3>
+          <p>코드 리뷰에 드는 시간과 사람이 놓칠 수 있는 실수를 줄이기 위해 ReviewMate를 만들고 실제 팀 프로젝트에 적용했습니다.</p>
+        </article>
+        <article>
+          <h3>문제의 원인을 끝까지 추적합니다</h3>
+          <p>비동기 처리와 트랜잭션의 실행 순서, 외부 API 요청 데이터를 확인하며 재현 조건과 원인을 구체적으로 찾았습니다.</p>
+        </article>
+        <article>
+          <h3>팀의 품질 기준을 함께 맞춥니다</h3>
+          <p>PR 리뷰에서 구현 이유와 예외 상황을 질문하고 수정 의견을 나누며, 팀이 같은 기준으로 코드를 이해하도록 노력했습니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="background-title">
+      <h2 id="background-title">Education &amp; Experience</h2>
+      <div class="timeline">
+        <article>
+          <time>2026.03 — 2026.09</time>
+          <div><h3>KH 정보교육원</h3><p>프로젝트 기반 AWS 풀스택 웹 개발자 양성과정</p></div>
+        </article>
+        <article>
+          <time>2024.01 — 2026.01</time>
+          <div><h3>오피스가든</h3><p>조경 작업 및 유지보수</p></div>
+        </article>
+        <article>
+          <time>2022.12 — 2023.12</time>
+          <div><h3>싱고</h3><p>조경 작업 및 유지보수</p></div>
+        </article>
+        <article>
+          <time>2015.03 — 2022.02</time>
+          <div><h3>국립경국대학교</h3><p>식물의학과 졸업</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="skill-title">
+      <h2 id="skill-title">Skills</h2>
+      <div class="skill-list">
+        <p><strong>Backend</strong><span>Java 21, Spring Boot, Spring MVC, Spring Security, REST API</span></p>
+        <p><strong>Data</strong><span>MyBatis, Spring Data JPA, Oracle, PostgreSQL, SQL</span></p>
+        <p><strong>Frontend</strong><span>React, JavaScript, Vite, React Router, Axios</span></p>
+        <p><strong>Infra</strong><span>AWS EC2·S3·Route 53·ALB, Docker, Nginx, GitHub Actions</span></p>
+        <p><strong>AI &amp; Tools</strong><span>Spring AI, Ollama, OpenAI API, Git, GitHub, JUnit</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>이다산 · <a href="mailto:ddmt08@naver.com">ddmt08@naver.com</a></p>
+    <p>References on request</p>
+  </footer>
 </body>
 </html>
