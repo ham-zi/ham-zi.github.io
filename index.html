@@ -408,53 +408,116 @@
 
     <section aria-labelledby="projects-title">
       <h2 id="projects-title">Project Experience</h2>
-
+    
       <div>
+        <article class="entry">
+          <div class="entry-head">
+            <div>
+              <p class="entry-kicker">
+                4인 팀 프로젝트 · 코스 영역 백엔드 및 프론트엔드
+              </p>
+    
+              <h3>Gimpo-Wellness</h3>
+            </div>
+    
+            <time>2026.08 — 진행 중</time>
+          </div>
+    
+          <p class="summary">
+            김포의 관광·웰니스 정보를 지도에서 탐색하고
+            관심 장소를 연결해 여행 코스를 구성하는 서비스
+          </p>
+    
+          <ul>
+            <li>
+              관리자 고정 코스 CRUD와 사용자 코스 조회·제작 API,
+              순례길 목록·상세·관리 화면을 구현했습니다.
+            </li>
+    
+            <li>
+              카카오 지도·경로 API를 연동해 출발지, 경유지, 도착지를
+              실제 도보 경로로 표시했습니다.
+            </li>
+    
+            <li>
+              경유 순서 후보의 총이동거리를 비교해 가장 짧은 방문 순서를
+              선택하고, 각 구간 1km 이내 음식점을 조회했습니다.
+            </li>
+    
+            <li>
+              일부 산악 좌표에서만 경로 조회가 실패하는 조건을
+              요청 데이터까지 추적해 원인을 확인했습니다.
+            </li>
+          </ul>
+    
+          <p class="stack">
+            Java · Spring Boot · MyBatis · Oracle · React · Kakao API
+          </p>
+    
+          <p class="links">
+            <a
+              href="https://github.com/kkimmun/wellness-backend"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Backend
+            </a>
+    
+            <a
+              href="https://github.com/kkimmun/wellness-frontend"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Frontend
+            </a>
+          </p>
+        </article>
+    
         <article class="entry">
           <div class="entry-head">
             <div>
               <p class="entry-kicker">
                 개인 프로젝트 · 기획 및 풀스택 개발
               </p>
-
+    
               <h3>ReviewMate</h3>
             </div>
-
+    
             <time>2026.07 — 진행 중</time>
           </div>
-
+    
           <p class="summary">
             GitHub PR의 변경 코드를 분석해 일반 코드 품질과
             팀 규칙에 대한 AI 리뷰를 제공하는 서비스
           </p>
-
+    
           <ul>
             <li>
               GitHub REST API와 Webhook을 연동해 PR 생성·업데이트 시
               자동 리뷰를 실행하고 인라인 의견과 전체 요약을 게시했습니다.
             </li>
-
+    
             <li>
               저장 트랜잭션보다 비동기 조회가 먼저 실행되던 문제를 추적해,
               커밋 이후 작업이 시작되도록 처리 순서를 변경했습니다.
             </li>
-
+    
             <li>
               지연 로딩 오류를 해결하기 위해 필요한 값을 짧은 트랜잭션에서
               DTO로 추출하고 외부 API 호출과 결과 저장을 분리했습니다.
             </li>
-
+    
             <li>
               Gimpo-Wellness의 15개 PR에 적용해 31회 자동 리뷰와
               40개 인라인 의견의 실제 사용 흐름을 확인했습니다.
             </li>
           </ul>
-
+    
           <p class="stack">
             Java 21 · Spring Boot · JPA · PostgreSQL · React ·
             GitHub API · OpenAI API
           </p>
-
+    
           <p class="links">
             <a
               href="https://github.com/ham-zi/-Backend-CodeReviewer"
@@ -465,116 +528,53 @@
             </a>
           </p>
         </article>
-
-        <article class="entry">
-          <div class="entry-head">
-            <div>
-              <p class="entry-kicker">
-                4인 팀 프로젝트 · 코스 영역 백엔드 및 프론트엔드
-              </p>
-
-              <h3>Gimpo-Wellness</h3>
-            </div>
-
-            <time>2026.08 — 진행 중</time>
-          </div>
-
-          <p class="summary">
-            김포의 관광·웰니스 정보를 지도에서 탐색하고
-            관심 장소를 연결해 여행 코스를 구성하는 서비스
-          </p>
-
-          <ul>
-            <li>
-              관리자 고정 코스 CRUD와 사용자 코스 조회·제작 API,
-              순례길 목록·상세·관리 화면을 구현했습니다.
-            </li>
-
-            <li>
-              카카오 지도·경로 API를 연동해 출발지, 경유지, 도착지를
-              실제 도보 경로로 표시했습니다.
-            </li>
-
-            <li>
-              경유 순서 후보의 총이동거리를 비교해 가장 짧은 방문 순서를
-              선택하고, 각 구간 1km 이내 음식점을 조회했습니다.
-            </li>
-
-            <li>
-              일부 산악 좌표에서만 경로 조회가 실패하는 조건을
-              요청 데이터까지 추적해 원인을 확인했습니다.
-            </li>
-          </ul>
-
-          <p class="stack">
-            Java · Spring Boot · MyBatis · Oracle · React · Kakao API
-          </p>
-
-          <p class="links">
-            <a
-              href="https://github.com/kkimmun/wellness-backend"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Backend
-            </a>
-
-            <a
-              href="https://github.com/kkimmun/wellness-frontend"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Frontend
-            </a>
-          </p>
-        </article>
-
+    
         <article class="entry">
           <div class="entry-head">
             <div>
               <p class="entry-kicker">
                 5인 팀 프로젝트 · 팀장, 백엔드 및 일부 화면 개발
               </p>
-
+    
               <h3>Plogues</h3>
             </div>
-
+    
             <time>2026.06 — 2026.07</time>
           </div>
-
+    
           <p class="summary">
             플로깅·식목 활동의 모집, 참여 신청, 활동 인증과 후기를
             연결하는 환경 활동 커뮤니티
           </p>
-
+    
           <ul>
             <li>
               참여 신청·승인·거절과 마이페이지 API,
               문의·신고 및 관리자 처리 화면을 담당했습니다.
             </li>
-
+    
             <li>
               동시 승인 시 정원을 초과하는 Race Condition을
               멀티스레드 테스트로 재현하고
               SELECT FOR UPDATE와 트랜잭션으로 제어했습니다.
             </li>
-
+    
             <li>
               라즈베리파이의 온도·습도·토양 수분 데이터를 저장하고
               AVG와 GROUP BY로 시간별 평균을 조회했습니다.
             </li>
-
+    
             <li>
               팀원 승인 병합 PR 87건 중 82건의 리뷰에 참여하고
               기술 질문과 수정 의견 42건을 남겼습니다.
             </li>
           </ul>
-
+    
           <p class="stack">
             Java 21 · Spring Boot · MyBatis · Oracle · React ·
             AWS · Docker
           </p>
-
+    
           <p class="links">
             <a
               href="https://github.com/ham-zi/-BE-plogues"
@@ -583,7 +583,7 @@
             >
               Backend
             </a>
-
+    
             <a
               href="https://github.com/ham-zi/-FE-plogues"
               target="_blank"
@@ -594,7 +594,7 @@
           </p>
         </article>
       </div>
-    </section>
+</section>
 
     <section aria-labelledby="strength-title">
       <h2 id="strength-title">Strengths</h2>
