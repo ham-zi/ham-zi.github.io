@@ -260,6 +260,28 @@
       font-size: 0.84rem;
     }
 
+    .certification-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .certification-list li {
+      margin: 0;
+      padding: 17px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 1.08rem;
+    }
+
+    .certification-list li:first-child {
+      padding-top: 0;
+    }
+
+    .certification-list li:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
     .skill-list {
       display: grid;
     }
@@ -690,6 +712,15 @@
           </div>
         </article>
       </div>
+    </section>
+
+    <section aria-labelledby="certifications-title">
+      <h2 id="certifications-title">Certifications</h2>
+
+      <ul class="certification-list" role="list">
+        <li><strong>정보처리기사</strong></li>
+        <li><strong>SQLD(SQL 개발자)</strong></li>
+      </ul>
     </section>
 
     <section aria-labelledby="skill-title">
