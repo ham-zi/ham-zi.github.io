@@ -6,10 +6,10 @@
 
   <meta
     name="description"
-    content="실제 사용 과정의 불편을 발견하고 개발로 개선하는 백엔드 개발자 이다산의 이력서입니다."
+    content="React와 Spring Boot로 화면과 API를 구현하고, AWS 배포와 운영 오류 해결을 경험한 풀스택 개발자 이다산의 이력서입니다."
   >
 
-  <title>이다산 | 백엔드 개발자</title>
+  <title>이다산 | 풀스택 개발자</title>
 
   <style>
     :root {
@@ -66,7 +66,7 @@
     }
 
     .profile {
-      min-height: 76vh;
+      min-height: 460px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -217,28 +217,11 @@
       margin: 14px 0 0;
     }
 
-    .strength-grid {
-      display: grid;
-      gap: 28px;
-    }
-
-    .strength-grid article {
-      padding: 0 0 28px;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .strength-grid article:last-child {
-      padding-bottom: 0;
-      border-bottom: 0;
-    }
-
-    .strength-grid h3,
     .timeline h3 {
       margin: 0 0 6px;
       font-size: 1.08rem;
     }
 
-    .strength-grid p,
     .timeline p {
       margin: 0;
       color: #3f3f3f;
@@ -323,7 +306,7 @@
       }
 
       .profile {
-        min-height: 68vh;
+        min-height: 380px;
       }
 
       main > section {
@@ -389,7 +372,7 @@
 
     <h1>이다산</h1>
 
-    <p class="role">백엔드 중심 풀스택 개발자</p>
+    <p class="role">풀스택 개발자</p>
 
     <nav aria-label="외부 링크">
       <a
@@ -405,7 +388,7 @@
         target="_blank"
         rel="noreferrer"
       >
-        Portfolio
+        포트폴리오 PDF
       </a>
     </nav>
 
@@ -419,86 +402,69 @@
       <h2 id="about-title">About Me</h2>
 
       <div class="lead">
+        <p><strong>화면과 API를 연결하고,<br>배포 후 발생한 문제까지 해결합니다.</strong></p>
         <p>
-          <strong>
-            실제 사용 과정의 불편을 발견하고,
-            개발로 개선하는 사람입니다.
-          </strong>
+          React와 Spring Boot로 여행 코스와 커뮤니티 기능을 개발했습니다.
+          Gimpo-Wellness에서는 코스 기능과 AWS 배포·모니터링을 맡아,
+          베타테스트 중 발생한 저장 오류를 로그와 코드로 추적해 수정했습니다.
         </p>
-
         <p>
-          팀 프로젝트에서 반복적인 코드 리뷰의 부담을 경험하고,
-          GitHub PR을 자동으로 분석하는 AI 코드 리뷰 서비스 ReviewMate를 개발했습니다.
-          이후 팀 프로젝트의 PR 73개에 적용하며 실제 리뷰 흐름과 개선점을 확인했습니다.
-        </p>
-
-        <p>
-          기능 구현 이후에도 동시성 문제를 재현하고,
-          부하 테스트로 성능을 측정하며 개선해 왔습니다.
-          팀원과 코드 리뷰를 통해 구현 이유와 예외 상황을 함께 점검하고,
-          사용자의 불편과 팀의 비효율을 줄이는 백엔드 개발자가 되고자 합니다.
+          반복적인 코드 리뷰를 돕기 위해 ReviewMate를 직접 기획·개발하고 팀 프로젝트에 적용했습니다.
+          비동기 작업의 실행 순서와 데이터 조회 문제를 해결하며 실제 사용에 필요한 동작을 다듬었습니다.
         </p>
       </div>
     </section>
 
     <section aria-labelledby="projects-title">
       <h2 id="projects-title">Project Experience</h2>
-    
+
       <div>
         <article class="entry">
           <div class="entry-head">
             <div>
               <p class="entry-kicker">
-                4인 팀 프로젝트 · 여행 코스 개발, 배포·운영 및 모니터링
+                4인 팀 프로젝트 · 코스 API·지도 화면, 배포·모니터링
               </p>
-    
+
               <h3>Gimpo-Wellness</h3>
             </div>
-    
+
             <time>2026.08 — 2026.09</time>
           </div>
-    
+
           <p class="summary">
-            김포시 관광진흥팀 인터뷰에서 도출한 요구사항을 바탕으로,
-            김포의 관광·웰니스 정보를 지도에서 탐색하고
-            관심 장소를 연결해 여행 코스를 구성하는 서비스
+            관광·웰니스 장소를 지도에서 탐색하고, 장소의 의미를 설명하는 순례길 콘셉트의 여행 코스를 구성하는 서비스
           </p>
-    
+
+          <p>김포시 관광진흥팀 인터뷰를 배경으로 시작한 팀 프로젝트입니다.</p>
+
           <ul>
             <li>
-              인터뷰 요구사항을 바탕으로 대응 방안을 제안하고,
-              순례길 콘셉트 여행 코스 기능을 개발하고,
-              고정 코스 구성과 이미지 라이선스 관리를 담당했습니다.
+              <strong>코스 추천과 지도 화면:</strong> 취향을 우선하고 이동 부담을 보조 기준으로 삼아
+              태그 일치도 70%, 거리 점수 30%로 경유지를 추천했습니다.
+              경유 순서 후보의 총이동거리를 비교하고 지도에 도보 경로를 표시했습니다.
             </li>
-
             <li>
-              태그 일치 비율과 거리 점수에 각각 70%, 30%의 가중치를 적용해
-              경유 관광지 10개를 추천했습니다.
+              <strong>경로와 설명의 단계별 제공:</strong> 코스 생성과 AI 설명 생성 API를 분리해
+              경로를 먼저 확인하도록 했습니다. 장소의 의미를 전달하는 설명까지 받아 코스를 완성하고,
+              설명 생성 실패 시 기존 경로를 유지한 채 설명만 재요청하도록 처리했습니다.
             </li>
-
             <li>
-              코스 생성 API와 AI 설명 생성 API를 분리해,
-              설명이 완성되기 전에 코스를 먼저 확인하도록 개선했습니다.
-              GPU가 없는 AWS 환경의 Ollama를 GPT-4.1 mini API로 전환해
-              코스 설명 생성 응답이 17.4초에서 1.9초로 줄어든 것을 확인했습니다.
+              <strong>배포와 접근 제어:</strong> AWS·Docker 배포를 구성하고 ALB에서 HTTPS를 처리했습니다.
+              EC2의 웹 포트는 ALB 보안 그룹만 허용하고,
+              배포와 모니터링에는 self-hosted runner와 Grafana Cloud 전송을 사용했습니다.
             </li>
-
             <li>
-              카카오 지도·경로 API로 도보 경로를 표시하고,
-              경유 순서 후보의 총이동거리를 비교해 방문 순서를 선택했습니다.
-            </li>
-
-            <li>
-              AWS·Docker 배포와 Prometheus·Grafana Cloud 모니터링을 담당했습니다.
-              베타테스트 중 코스 수정 API의 500 오류를 로그로 추적해,
-              삭제 로직 비활성화로 인한 중복 키 충돌을 확인하고 수정했습니다.
+              <strong>베타테스트 오류 해결:</strong> 코스 수정 시 발생한 500 오류를 로그로 추적했습니다.
+              비활성화된 삭제 로직 때문에 중복 키가 발생한 것을 확인해 수정하고,
+              변경한 경유지가 정상 저장되는 것을 확인했습니다.
             </li>
           </ul>
-    
+
           <p class="stack">
             Java · Spring Boot · MyBatis · Oracle · React · Kakao API · OpenAI API · AWS · Docker · Prometheus · Grafana Cloud
           </p>
-    
+
           <p class="links">
             <a
               href="https://github.com/kkimmun/wellness-backend"
@@ -507,7 +473,7 @@
             >
               Backend
             </a>
-    
+
             <a
               href="https://github.com/kkimmun/wellness-frontend"
               target="_blank"
@@ -517,51 +483,49 @@
             </a>
           </p>
         </article>
-    
+
         <article class="entry">
           <div class="entry-head">
             <div>
               <p class="entry-kicker">
                 개인 프로젝트 · 기획 및 백엔드 개발
               </p>
-    
+
               <h3>ReviewMate</h3>
             </div>
-    
+
             <time>2026.07 — 진행 중</time>
           </div>
-    
+
           <p class="summary">
-            GitHub PR 자동 리뷰를 제공하며, 비동기 처리에서
-            DB 작업과 외부 API 호출을 분리한 서비스
+            PR 생성·수정 시 AI 리뷰를 자동으로 작성해 팀의 코드 리뷰를 돕는 서비스
           </p>
-    
+          <p>2026년 7–8월 초기 개발 후, 사용 과정에서 발견한 문제를 개선하고 있습니다.</p>
+
           <ul>
             <li>
               GitHub REST API와 Webhook을 연동해 PR 생성·업데이트 시
               자동 리뷰를 실행하고 인라인 의견과 전체 요약을 게시했습니다.
+              Gimpo-Wellness의 실제 PR에 적용했습니다.
             </li>
-    
+
             <li>
               저장 트랜잭션보다 비동기 조회가 먼저 실행되던 문제를 추적해,
               커밋 이후 작업이 시작되도록 처리 순서를 변경했습니다.
             </li>
-    
+
             <li>
               지연 로딩 오류를 해결하기 위해 필요한 값을 짧은 트랜잭션에서
               DTO로 추출하고 외부 API 호출과 결과 저장을 분리했습니다.
             </li>
-    
-            <li>
-              Gimpo-Wellness의 PR 73개에 자동 코드 리뷰를 적용했습니다.
-            </li>
+
           </ul>
-    
+
           <p class="stack">
             Java 21 · Spring Boot · JPA · PostgreSQL ·
             GitHub API · OpenAI API
           </p>
-    
+
           <p class="links">
             <a
               href="https://github.com/ham-zi/-Backend-CodeReviewer"
@@ -572,54 +536,50 @@
             </a>
           </p>
         </article>
-    
+
         <article class="entry">
           <div class="entry-head">
             <div>
               <p class="entry-kicker">
                 5인 팀 프로젝트 · 팀장, 백엔드 및 일부 화면 개발
               </p>
-    
+
               <h3>Plogues</h3>
             </div>
-    
+
             <time>2026.06 — 2026.07</time>
           </div>
-    
+
           <p class="summary">
             플로깅·식목 활동의 모집, 참여 신청, 활동 인증과 후기를
             연결하는 환경 활동 커뮤니티
           </p>
-    
+
           <ul>
             <li>
               참여 신청·승인·거절과 마이페이지 API,
               문의·신고 및 관리자 처리 화면을 담당했습니다.
             </li>
-    
-            <li>
-              동시 승인 시 정원을 초과하는 Race Condition을
-              멀티스레드 테스트로 재현하고
-              SELECT FOR UPDATE와 트랜잭션으로 제어했습니다.
-            </li>
-    
+
+
             <li>
               라즈베리파이 센서 데이터의 시간별 평균 조회에 Caffeine 캐싱을 적용하고,
-              로컬 k6 부하 테스트(VU 50·1분)에서 평균 응답 시간을
-              35.83ms에서 6.04ms로 약 83% 단축했습니다.
+              로컬 k6 부하 테스트(VU 50·1분)에서 평균 응답 시간이
+              적용 전 35.83ms, 적용 후 6.04ms로 측정됐습니다.
             </li>
-    
+
             <li>
-              코드 리뷰 96건을 작성하며
-              기술 질문과 의견 52건을 남겼습니다.
+              팀장으로서 PageInfo·File 공통 모듈의 재사용을 권장했습니다.
+              팀원이 사용한 generated keys 방식의 PK 반환 동작과 선택 이유를 확인하고,
+              다른 팀원에게도 공유해 사용을 권장했습니다.
             </li>
           </ul>
-    
+
           <p class="stack">
             Java 21 · Spring Boot · MyBatis · Oracle · React ·
             AWS · Docker
           </p>
-    
+
           <p class="links">
             <a
               href="https://github.com/ham-zi/-BE-plogues"
@@ -628,7 +588,7 @@
             >
               Backend
             </a>
-    
+
             <a
               href="https://github.com/ham-zi/-FE-plogues"
               target="_blank"
@@ -640,41 +600,6 @@
         </article>
       </div>
 </section>
-
-    <section aria-labelledby="strength-title">
-      <h2 id="strength-title">Strengths</h2>
-
-      <div class="strength-grid">
-        <article>
-          <h3>불편을 기능으로 바꿉니다</h3>
-
-          <p>
-            반복적인 코드 리뷰의 부담을 줄이기 위해 ReviewMate를 개발하고,
-            실제 팀 프로젝트에 적용했습니다.
-            사용 과정에서 발견한 불편을 기능으로 구체화하고 개선합니다.
-          </p>
-        </article>
-
-        <article>
-          <h3>구현 이후에도 검증하고 개선합니다</h3>
-
-          <p>
-            베타테스트에서 발생한 오류를 로그와 코드로 추적해 수정하고,
-            부하 테스트로 캐싱 적용 전후의 성능을 비교했습니다.
-            기능 완성에 그치지 않고 실제 동작과 개선 효과를 확인합니다.
-          </p>
-        </article>
-
-        <article>
-          <h3>팀의 품질 기준을 함께 맞춥니다</h3>
-
-          <p>
-            코드 리뷰에서 구현 이유와 예외 상황을 질문하고 수정 의견을 나눴습니다.
-            팀이 같은 기준으로 코드를 이해하고 문제를 함께 점검하도록 노력합니다.
-          </p>
-        </article>
-      </div>
-    </section>
 
     <section aria-labelledby="background-title">
       <h2 id="background-title">Education &amp; Experience</h2>
@@ -797,7 +722,7 @@
       </a>
     </p>
 
-    <p>References on request</p>
+    <p>풀스택 개발자</p>
   </footer>
 </body>
 </html>
